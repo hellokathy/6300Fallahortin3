@@ -30,6 +30,7 @@ public class MyStringTest {
 		testString.setString("");
 		assertEquals("vowels should equal ", "", testString.getVowels());
 	}
+	
 	//this tests for a substring of 1 through 5 to ensure index is correct
 	@Test
 	public void testGetSubstring1() {
@@ -43,9 +44,20 @@ public class MyStringTest {
 		assertEquals("vowels should equal hino", "3456", testString.getSubstring(3, 6));
 	}
 
+	//this tests for a substring of an empty string (should throw oob exception)
+	@Test
+	public void testGetSubstring3() {
+	
+	}
+	//this tests for a substring of an empty string (should throw oob exception)
+	@Test
+	public void testGetSubstring4() {
+	
+	}
+	//
 	//this tests to see if an exception is thrown for invalid entries
 	@Test(expected = StringIndexOutOfBoundsException.class)
-	public void testGetSubstring3() {
+	public void testGetSubstring5() {
 		testString.setString("shinochu");
 		assertEquals("this should invoke an exception", "hino", testString.getSubstring(1,40));
 	}
