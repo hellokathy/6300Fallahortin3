@@ -39,18 +39,11 @@ public class MyString {
 
 	// Removes all occurrences of the specified character from the current string.
 	public void removeChar(char c) {
-		this.theString = this.theString.replaceAll("["+c+"]", "");
+		return this.theString.replaceAll(c, "");
 	}
 
 	// Invert the current string.
 	public void invert() {
-		StringBuffer theStringBuffer = new StringBuffer(this.theString);
-		this.theString = theStringBuffer.reverse().toString();
+	
 	}
 }
-
-
-
-
-
-
