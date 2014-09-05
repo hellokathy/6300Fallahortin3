@@ -1,0 +1,48 @@
+package edu.gatech.seclass.assignment3;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class MyStringTest {
+	private MyString testString = new MyString();
+	//not required, and poor since it is dependent on testGetString
+	@Test
+	public void testSetString() {
+		testString.setString("bulbasaur");
+		
+		assertEquals("should equal bulbasaur", "bulbasaur", testString.getString());
+	}
+	//not required, and poor since it is dependent on another method
+	@Test
+	public void testGetString() {
+		testString.setString("bulbasaur");
+		assertEquals("should still equal bulbasaur", "bulbasaur", testString.getString());
+	}
+
+	@Test
+	public void testGetVowels() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetSubstring() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testIndexOf() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testRemoveChar() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testInvert() {
+		fail("Not yet implemented");
+	}
+
+}

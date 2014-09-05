@@ -28,13 +28,17 @@ public class MyString {
 	// Returns a string that consists of the substring between start and end indexes (both included) in the current string.
 	// Index 1 corresponds to the first character in the current string.
 	public String getSubstring(int start, int end) {
-		return this.theString.substring(start, end);
+		return this.theString.substring(start-1, end);
 	}
 
 	// Returns the index of the first occurrence of a character in the current string.
 	// Index 1 corresponds to the first character in the current string.    
 	public int indexOf(char c) {
-		return this.indexOf(c);
+		if(this.theString.indexOf(c)<0){
+			return (this.theString.indexOf(c));
+		} else {
+			return (this.theString.indexOf(c))+1;			
+		}
 	}
 
 	// Removes all occurrences of the specified character from the current string.
