@@ -18,6 +18,18 @@ public class MyStringTest {
 		testString.setString("bulbasaur");
 		assertEquals("vowels should equal uaua", "uaau", testString.getVowels());
 	}
+	//this tests for mixed upper and lower case vowels
+	@Test
+	public void testGetVowels3() {
+		testString.setString("BuLbASAUR");
+		assertEquals("vowels should equal uAAU", "uAAU", testString.getVowels());
+	}	
+	//this tests for empty string
+	@Test
+	public void testGetVowels4() {
+		testString.setString("");
+		assertEquals("vowels should equal ", "", testString.getVowels());
+	}
 	//this tests for a substring of 1 through 5 to ensure index is correct
 	@Test
 	public void testGetSubstring1() {
