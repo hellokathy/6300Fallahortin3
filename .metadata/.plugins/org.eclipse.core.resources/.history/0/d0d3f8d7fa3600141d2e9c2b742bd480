@@ -50,6 +50,12 @@ public class MyStringTest {
 		testString.setString("");
 		assertEquals("substring should throw oob exception", null, testString.getSubstring(40, 20));
 	}
+	//this tests for a substring of an empty string (should throw oob exception)
+	@Test
+	public void testGetSubstring4() {
+	
+	}
+	//
 	//this tests to see if an exception is thrown for invalid entries
 	@Test(expected = StringIndexOutOfBoundsException.class)
 	public void testGetSubstring5() {
@@ -94,13 +100,6 @@ public class MyStringTest {
 		testString.setString("greninja");
 		testString.removeChar('z');
 		assertEquals("this should remove nothing", "greninja", testString.getString());
-	}
-	//testing the removal of no chars
-	@Test
-	public void testRemoveChar4() {
-		testString.setString("");
-		testString.removeChar('z');
-		assertEquals("this should remove nothing", "", testString.getString());
 	}
 	//testing simple invert
 	@Test

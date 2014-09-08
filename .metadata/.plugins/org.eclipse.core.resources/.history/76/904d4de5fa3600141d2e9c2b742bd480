@@ -96,12 +96,12 @@ public class MyStringTest {
 		assertEquals("this should remove nothing", "greninja", testString.getString());
 	}
 	//testing the removal of no chars
-	@Test
-	public void testRemoveChar4() {
-		testString.setString("");
-		testString.removeChar('z');
-		assertEquals("this should remove nothing", "", testString.getString());
-	}
+		@Test
+		public void testRemoveChar3() {
+			testString.setString("greninja");
+			testString.removeChar('z');
+			assertEquals("this should remove nothing", "greninja", testString.getString());
+		}
 	//testing simple invert
 	@Test
 	public void testInvert1() {

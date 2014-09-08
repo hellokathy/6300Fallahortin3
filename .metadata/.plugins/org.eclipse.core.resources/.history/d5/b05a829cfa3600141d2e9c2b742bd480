@@ -35,21 +35,26 @@ public class MyStringTest {
 	@Test
 	public void testGetSubstring1() {
 		testString.setString("shinochu");
-		assertEquals("substring should equal hino", "shino", testString.getSubstring(1, 5));
+		assertEquals("vowels should equal hino", "shino", testString.getSubstring(1, 5));
 	}
 	//this tests a good example of clarification off of piazza
 	@Test
 	public void testGetSubstring2() {
 		testString.setString("1234567890");
-		assertEquals("substring should equal hino", "3456", testString.getSubstring(3, 6));
+		assertEquals("vowels should equal hino", "3456", testString.getSubstring(3, 6));
 	}
 
 	//this tests for a substring of an empty string (should throw oob exception)
-	@Test(expected = StringIndexOutOfBoundsException.class)
+	@Test
 	public void testGetSubstring3() {
-		testString.setString("");
-		assertEquals("substring should throw oob exception", null, testString.getSubstring(40, 20));
+	
 	}
+	//this tests for a substring of an empty string (should throw oob exception)
+	@Test
+	public void testGetSubstring4() {
+	
+	}
+	//
 	//this tests to see if an exception is thrown for invalid entries
 	@Test(expected = StringIndexOutOfBoundsException.class)
 	public void testGetSubstring5() {
@@ -94,13 +99,6 @@ public class MyStringTest {
 		testString.setString("greninja");
 		testString.removeChar('z');
 		assertEquals("this should remove nothing", "greninja", testString.getString());
-	}
-	//testing the removal of no chars
-	@Test
-	public void testRemoveChar4() {
-		testString.setString("");
-		testString.removeChar('z');
-		assertEquals("this should remove nothing", "", testString.getString());
 	}
 	//testing simple invert
 	@Test
