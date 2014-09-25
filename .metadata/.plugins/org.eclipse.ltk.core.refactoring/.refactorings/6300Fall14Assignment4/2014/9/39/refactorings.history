@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;button1&apos; in &apos;edu.gatech.seclass.unitconvertor.R.id&apos; to &apos;distanceLaunch&apos;&#x0A;- Original project: &apos;6300Fall14Assignment4&apos;&#x0A;- Original element: &apos;edu.gatech.seclass.unitconvertor.R.id.button1&apos;&#x0A;- Renamed element: &apos;edu.gatech.seclass.unitconvertor.R.id.distanceLaunch&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="true" description="Rename field &apos;button1&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/gen&lt;edu.gatech.seclass.unitconvertor{R.java[R[id^button1" name="distanceLaunch" references="true" setter="false" stamp="1411609334388" textual="false" version="1.0"/>
+</session>
