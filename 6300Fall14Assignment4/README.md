@@ -22,7 +22,7 @@ defined software tool. The Average Sentence Length Tool will provide students a 
 
 
 ![](http://www.androidtapp.com/wp-content/uploads/2012/10/Nexus-4-550x322.png) 
-- #### Area Converter
+#### Area Converter
   -  The area converter allows you to convert the area between meters and feet.  Select the unit of measurement
   you wish to convert and use the radio buttons to toggle in between
     
@@ -33,7 +33,7 @@ defined software tool. The Average Sentence Length Tool will provide students a 
 
   
 ![](http://www.androidtapp.com/wp-content/uploads/2012/10/Nexus-4-550x322.png)
-- #### Currency Converter
+#### Currency Converter
   -  The currency converter allows you to convert currency between dollars and euros.  Select the unit of currency
   you wish to convert and use the radio buttons to toggle in between
   
@@ -41,7 +41,7 @@ defined software tool. The Average Sentence Length Tool will provide students a 
 | --------------------- |:---------------------:|
 |1 Euro | 1.27 Dollars| 
 ![](http://www.androidtapp.com/wp-content/uploads/2012/10/Nexus-4-550x322.png)
-- #### Distance Converter
+#### Distance Converter
   -  The distance converter allows you to convert currency between miles and kilometers.  Select the unit of currency
   you wish to convert and use the radio buttons to toggle in between
   
