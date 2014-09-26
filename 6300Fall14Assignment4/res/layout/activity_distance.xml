@@ -27,20 +27,38 @@
         <requestFocus />
     </EditText>
 
-    <RadioButton
-        android:id="@+id/radioButton1"
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/editText1"
-        android:text="Miles" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="109dp"
+        android:onClick="menuLaunch"
+        android:text="Menu" />
 
-    <RadioButton
-        android:id="@+id/radioButton2"
+    <RadioGroup
+        android:id="@+id/radioGroup1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/radioButton1"
-        android:layout_below="@+id/radioButton1"
-        android:text="Kilometers" />
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true" >
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Miles"
+            android:onClick="handleClick" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kilometers"
+            android:onClick="handleClick" />
+    </RadioGroup>
 
 </RelativeLayout>

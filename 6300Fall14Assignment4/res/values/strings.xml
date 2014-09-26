@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">UnitConverter</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main">Unit Converter</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_distance">DistanceActivity</string>
     <string name="title_activity_area">AreaActivity</string>

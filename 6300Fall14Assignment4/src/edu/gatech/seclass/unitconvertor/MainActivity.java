@@ -1,6 +1,7 @@
 package edu.gatech.seclass.unitconvertor;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,15 +16,17 @@ public class MainActivity extends Activity {
 	}
 	
 	public void distanceLaunch(View view){
-		setContentView(R.layout.activity_distance);
+		Intent intent = new Intent(view.getContext(), DistanceActivity.class);
+        startActivity(intent);
 	}
 	public void areaLaunch(View view){
 
-		setContentView(R.layout.activity_area);
+		Intent intent = new Intent(view.getContext(), AreaActivity.class);
+        startActivity(intent);
 	}
-	public void currencyLaunch(){
-		setContentView(R.layout.activity_currency);
-		
+	public void currencyLaunch(View view){
+		Intent intent = new Intent(view.getContext(), CurrencyActivity.class);
+        startActivity(intent);
 	}
 
 }
