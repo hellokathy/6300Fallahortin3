@@ -18,4 +18,17 @@ public class CurrencyActivity extends Activity {
 		Intent intent = new Intent(view.getContext(), MainActivity.class);
         startActivity(intent);
 	}
+    
+    public void handleDollarsClick(View view){
+		EditText txt = (EditText) findViewById(R.id.editText1);
+		double euros = Double.parseDouble(txt.getText().toString());
+        double dollars = euros*1.27; //conversion here
+        txt.setText( String.valueOf(dollars););
+	}
+    public void handleEurosClick(View view){
+		EditText txt = (EditText) findViewById(R.id.editText1);
+		double dollars = Double.parseDouble(txt.getText().toString());
+        double euros = dollars/1.27; //conversion here
+        txt.setText(milesToKm( String.valueOf(euros););
+	}
 }

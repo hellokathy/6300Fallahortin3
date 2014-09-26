@@ -27,21 +27,28 @@
         <requestFocus />
     </EditText>
 
-    <RadioButton
-        android:id="@+id/radioButton1"
+ <RadioGroup
+        android:id="@+id/radioGroup1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/editText1"
-        android:text="Square Feet" />
+        android:layout_centerHorizontal="true" >
 
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/radioButton1"
-        android:layout_below="@+id/radioButton1"
-        android:text="Square meters" />
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Square Meters"
+            android:onClick="handleMetersClick" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Square Feet"
+            android:onClick="handleFeetClick" />
+    </RadioGroup>
 
     <Button
         android:id="@+id/button1"

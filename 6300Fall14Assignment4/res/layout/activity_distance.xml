@@ -51,14 +51,14 @@
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="Miles"
-            android:onClick="handleClick" />
+            android:onClick="handleMilesClick" />
 
         <RadioButton
             android:id="@+id/radio2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Kilometers"
-            android:onClick="handleClick" />
+            android:onClick="handleKmClick" />
     </RadioGroup>
 
 </RelativeLayout>
