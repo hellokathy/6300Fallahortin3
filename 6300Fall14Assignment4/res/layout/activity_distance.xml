@@ -27,17 +27,6 @@
         <requestFocus />
     </EditText>
 
-    <Button
-        android:id="@+id/button1"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="109dp"
-        android:onClick="menuLaunch"
-        android:text="Menu" />
-
     <RadioGroup
         android:id="@+id/radioGroup1"
         android:layout_width="wrap_content"
@@ -60,5 +49,16 @@
             android:text="Kilometers"
             android:onClick="handleKmClick" />
     </RadioGroup>
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:onClick="menuLaunch"
+        android:text="Menu" />
 
 </RelativeLayout>

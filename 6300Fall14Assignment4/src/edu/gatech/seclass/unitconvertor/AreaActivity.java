@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.*;
 
 public class AreaActivity extends Activity {
 
@@ -28,6 +29,6 @@ public class AreaActivity extends Activity {
 		EditText txt = (EditText) findViewById(R.id.editText1);
 		double feet = Double.parseDouble(txt.getText().toString());
         double meters = feet/3.28084; //conversion here
-        txt.setText( String.valueOf(meters););
+        txt.setText( String.valueOf(meters));
 	}
 }

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.*;
 
 public class CurrencyActivity extends Activity {
 
@@ -23,12 +24,12 @@ public class CurrencyActivity extends Activity {
 		EditText txt = (EditText) findViewById(R.id.editText1);
 		double euros = Double.parseDouble(txt.getText().toString());
         double dollars = euros*1.27; //conversion here
-        txt.setText( String.valueOf(dollars););
+        txt.setText( String.valueOf(dollars));
 	}
     public void handleEurosClick(View view){
 		EditText txt = (EditText) findViewById(R.id.editText1);
 		double dollars = Double.parseDouble(txt.getText().toString());
         double euros = dollars/1.27; //conversion here
-        txt.setText(milesToKm( String.valueOf(euros););
+        txt.setText(String.valueOf(euros));
 	}
 }

@@ -49,13 +49,13 @@ public class DistanceActivity extends Activity {
 		EditText txt = (EditText) findViewById(R.id.editText1);
 		double km = Double.parseDouble(txt.getText().toString());
         double miles = km/1.609; //conversion here
-        txt.setText( String.valueOf(miles););
+        txt.setText( String.valueOf(miles));
 	}
     public void handleKmClick(View view){
 		EditText txt = (EditText) findViewById(R.id.editText1);
 		double miles = Double.parseDouble(txt.getText().toString());
         double km = miles*1.609; //conversion here
-        txt.setText(milesToKm( String.valueOf(km););
+        txt.setText( String.valueOf(km));
 	}
 	public void menuLaunch(View view){
 		Intent intent = new Intent(view.getContext(), MainActivity.class);
