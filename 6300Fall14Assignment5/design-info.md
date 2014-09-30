@@ -6,6 +6,7 @@ Contents
 - [Nouns](#nouns)
 - [Verbs](#verbs)
 - [Author](#author)
+- [Classes and Attributes](#classes-and-attributes)
 
 ### 1) Introduction
 This document is meant as a supplement to show design decisions made when designing the UML diagram for the Ice Cream Cart Rewards Management System
@@ -36,8 +37,27 @@ The following is a list of verbs corresponding to actions:
 -get's free ice cream
 -accruing points (and double points)
 -generate (daily report)
+```
 
+### 4) Classes and Attributes
 
+Customer
+```
+Customer:
+int VIP ID
+string name
+string address 
+date bithdates
+function to show vip ID 
+```
+
+Cart
+```
+Ice Cream Cart:
+function to sell (vip id) //also awards vip points
+int [][] points per vip id;
+int [][] monthly vip points per vip id
+preorder slots
 ```
 
 ### 4) Author
