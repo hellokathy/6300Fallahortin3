@@ -11,6 +11,7 @@ Contents
   - [Rewards DB](#rewards-db)
   - [Order History](#order-history)
 - [Actions](#actions)
+- [UML Draft](#uml-draft)
 - [Author](#author)
 
 ### 1) Introduction
@@ -125,7 +126,7 @@ http://yuml.me/edit/893a1bb0
 [Report|report:arrayOfItems|generateReport(); appendToReport(item)] <- [sellableItem]
 [Report] <- [preorderItem],
 ```
-### 6) Author
+### 7) Author
 
 | Name  				| GATECH Username		| E-mail						| Alias |
 | --------------------- |:---------------------:|:-----------------------------:|:-----:| 
