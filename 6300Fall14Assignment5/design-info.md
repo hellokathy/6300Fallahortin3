@@ -125,6 +125,57 @@ http://yuml.me/edit/893a1bb0
 [Report|report:arrayOfItems|generateReport(); appendToReport(item)] <- [sellableItem]
 [Report] <- [preorderItem],
 ```
+
+### 7) UML Draft 2
+http://yuml.me/edit/44ad9170
+
+![](http://yuml.me/44ad9170)
+
+```
+[iceCreamCart|inventory:sellableItems;inventory:preorderSlots |buy(); preorder()] 
+[Customer|vipID:int;name:string; address:string; birthdate:date; goldStatus:bool |showID(); addPoints(int); grantGold(vipID); awardFreeForGold(); showLoyaltyCard()] 
+
+[Customer]<->[iceCreamCart]
+[sellableItem|sell();giveFree()] <>-> [iceCreamCart]
+[frozenYogurt] <>-> [sellableItem]
+[iceCream] <>-> [sellableItem]
+[preorderItem|preorder();giveFree()] <>-> [iceCreamCart]
+[frozenYogurt] <>-> [preorderItem]
+[vipInfo|points:int; acrualRate:double; monthlyPoints:int; freeItems:int; discountItems:int] -> [Customer]
+[preorderItem]-.-[vipInfo]
+[sellableItem]-.-[vipInfo]
+[time]
+[Report|report:arrayOfItems|generateReport(); appendToReport(item)] <- [sellableItem]
+[Report] <- [preorderItem],
+```
+
+## 8) UML Draft 3
+http://yuml.me/edit/e8c77273
+![](http://yuml.me/e8c77273)
+```
+[iceCreamCart|inventory:sellableItems;inventory:preorderSlots |buy(); preorder()] 
+[Customer|vipID:int;name:string; address:string; birthdate:date; goldStatus:bool |showID(); addPoints(int); grantGold(vipID); awardFreeForGold(); showLoyaltyCard()] 
+[Customer]<->[iceCreamCart]
+[sellableItem|sell();giveFree()] <>-> [iceCreamCart]
+[frozenYogurt] <>-> [sellableItem]
+[iceCream] <>-> [sellableItem]
+[preorderItem|preorder();giveFree()] <>-> [iceCreamCart]
+[frozenYogurt] <>-> [preorderItem]
+[vipInfo|points:int; acrualRate:double; monthlyPoints:int; freeItems:int; discountItems:int] <-> [Customer]
+[preorderItem]-.-[vipInfo]
+[sellableItem]-.-[vipInfo]
+[time] <-30 days occurs> [Customer]
+[time]-.-[vipInfo]
+[Report|report:arrayOfItems|generateReport(); appendToReport(item)] <- [sellableItem]
+[Report] <- [preorderItem]
+[iceCreamCart]->[Report]
+[Non-VIP Customer Sales] -> [Report]
+```
+
+## 8) TODO Features
+-add in other non-vip customers
+-function to allow for awarding of monthly ice creams
+
 ### 6) Author
 
 | Name  				| GATECH Username		| E-mail						| Alias |
