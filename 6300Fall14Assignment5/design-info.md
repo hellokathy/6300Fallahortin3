@@ -1,3 +1,4 @@
+
 ## **Ice Cream Cart Rewards Management System Design Information**
 
 Contents
@@ -11,6 +12,7 @@ Contents
   - [Rewards DB](#rewards-db)
   - [Order History](#order-history)
 - [Actions](#actions)
+- [UML Draft](#uml-draft)
 - [Author](#author)
 
 ### 1) Introduction
@@ -125,6 +127,7 @@ http://yuml.me/edit/893a1bb0
 [Report|report:arrayOfItems|generateReport(); appendToReport(item)] <- [sellableItem]
 [Report] <- [preorderItem],
 ```
+<<<<<<< HEAD
 
 ### 7) UML Draft 2
 http://yuml.me/edit/44ad9170
@@ -172,11 +175,10 @@ http://yuml.me/edit/e8c77273
 [Non-VIP Customer Sales] -> [Report]
 ```
 
-## 8) TODO Features
--add in other non-vip customers
--function to allow for awarding of monthly ice creams
-
 ### 6) Author
+=======
+### 7) Author
+>>>>>>> 4740d10364cc3ddf30eb9c37f232156ffa96dcfa
 
 | Name  				| GATECH Username		| E-mail						| Alias |
 | --------------------- |:---------------------:|:-----------------------------:|:-----:| 
