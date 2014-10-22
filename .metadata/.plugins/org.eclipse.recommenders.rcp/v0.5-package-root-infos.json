@@ -1,0 +1,210 @@
+[
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2fa5177aedfe3414e234473fd3522e5221609d03",
+    "jarFileModificationDate": "2014-07-25T12:36:11-04:00",
+    "location": "/home/ubuntu/opt/jdk1.7.0_67/jre/lib/ext/zipfs.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "be26f7a61bf1436a5b74192997cfed6459004c20",
+    "jarFileModificationDate": "2014-07-25T12:51:27-04:00",
+    "location": "/home/ubuntu/opt/jdk1.7.0_67/jre/lib/ext/localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c7957be341f0dd043e4e91cc56afc9e0ed254ede",
+    "jarFileModificationDate": "2014-07-25T12:51:02-04:00",
+    "location": "/home/ubuntu/opt/jdk1.7.0_67/jre/lib/rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "junit",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "365907cf1e488e967f1d3e923d0111b36d930ee6",
+    "jarFileModificationDate": "2012-05-26T06:46:30-04:00",
+    "location": "/home/ubuntu/opt/eclipse/plugins/org.junit_4.10.0.v4_10_0_v20120426-0900/junit.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5e51ce82a095b4a23291b1cd35e6f1488efc5776",
+    "jarFileModificationDate": "2014-07-25T12:28:21-04:00",
+    "location": "/home/ubuntu/opt/jdk1.7.0_67/jre/lib/ext/sunpkcs11.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "android-support-v4",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ded9acc6a9792b8f1afc470f0c9cd36d178914cd",
+    "jarFileModificationDate": "2014-09-24T21:31:23-04:00",
+    "location": "/home/ubuntu/6300Fallahortin3/6300Fall14Assignment4/libs/android-support-v4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "cca73abe3e36845ee10132f73612ffa35e3759a3",
+    "jarFileModificationDate": "2014-07-25T12:51:06-04:00",
+    "location": "/home/ubuntu/opt/jdk1.7.0_67/jre/lib/jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1198437750072f65df5e6ebbdadc38b5f683f717",
+    "jarFileModificationDate": "2014-07-25T12:43:40-04:00",
+    "location": "/home/ubuntu/opt/jdk1.7.0_67/jre/lib/resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e0daf16d3b138666a6b2dfbdf807f269615e5726",
+    "jarFileModificationDate": "2014-07-25T12:43:40-04:00",
+    "location": "/home/ubuntu/opt/jdk1.7.0_67/jre/lib/jfr.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "01b9aa16177150f35e7274f4916d76120e7c6538",
+    "jarFileModificationDate": "2014-07-25T12:28:41-04:00",
+    "location": "/home/ubuntu/opt/jdk1.7.0_67/jre/lib/ext/dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1826204b0e05aef412b595321866f7d190e0498d",
+    "jarFileModificationDate": "2014-07-25T12:34:30-04:00",
+    "location": "/home/ubuntu/opt/jdk1.7.0_67/jre/lib/ext/sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7a9d5606dbd08ce86bef246cceafd0ea535b9f11",
+    "jarFileModificationDate": "2014-07-25T12:51:11-04:00",
+    "location": "/home/ubuntu/opt/jdk1.7.0_67/jre/lib/charsets.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.hamcrest.core",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 0,
+      "qualifier": "v20090501071000"
+    },
+    "jarFileFingerprint": "254c9660266e1177c94b1a9ba05f6f757e7fb85a",
+    "jarFileModificationDate": "2013-02-24T23:57:57-05:00",
+    "location": "/home/ubuntu/opt/eclipse/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "40a67c09f821af3f62d428e4d79980f9df10e407",
+    "jarFileModificationDate": "2014-07-25T12:27:44-04:00",
+    "location": "/home/ubuntu/opt/jdk1.7.0_67/jre/lib/ext/sunec.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "be4124ecceb37230419f0f31ea6e7d50babb4973",
+    "jarFileModificationDate": "2014-07-25T12:21:47-04:00",
+    "location": "/home/ubuntu/opt/jdk1.7.0_67/jre/lib/jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "android",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7f972d2aa0fcb741fc84a9a10c98555f6f431a7a",
+    "jarFileModificationDate": "2014-06-17T12:39:33-04:00",
+    "location": "/home/ubuntu/opt/android-sdk-linux/platforms/android-19/android.jar",
+    "javaRuntime": false
+  }
+]

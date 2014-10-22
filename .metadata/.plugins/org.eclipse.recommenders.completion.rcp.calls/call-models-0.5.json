@@ -1,0 +1,12 @@
+{
+  "/home/ubuntu/6300Fallahortin3/6300Fall14Assignment4/gen": {
+    "location": "/home/ubuntu/6300Fallahortin3/6300Fall14Assignment4/gen",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/ubuntu/6300Fallahortin3/6300Fall14Assignment4/gen\u0027. Skipped."
+  },
+  "/home/ubuntu/opt/android-sdk-linux/platforms/android-19/android.jar": {
+    "location": "/home/ubuntu/opt/android-sdk-linux/platforms/android-19/android.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027/home/ubuntu/opt/android-sdk-linux/platforms/android-19/android.jar\u0027. Neither fingerprint \u00277f972d2aa0fcb741fc84a9a10c98555f6f431a7a\u0027 nor symbolic name \u0027android\u0027 are known."
+  }
+}
