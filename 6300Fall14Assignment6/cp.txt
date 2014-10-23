@@ -1,4 +1,4 @@
-#HEAD
+#HEAD CP test
 #
 #NAME
 #   head – output the first part of a file
@@ -11,22 +11,29 @@
 #   numlines or 10, if no such argument is provided.
 
 Filename:
-    not provided.   [error]
-    with quotes.    [single]
-    no quotes.      [single]
-    special
+    not provided.               [error]
+    provided.                   [property Filename_provided]
+    provided with quotes.       [single] [if Filename_provided]
+    provided with no quotes.    [single] [if Filename_provided]
+    contains special chars.     [if Filename_provided]
+    provided is a directory.    [if Filename_provided]
+    Non-existent file.          [error]
 
 numlines:
-    0.              [property zerovalue]
+    0.              [property Zerovalue]
     1.
-    file_lines - 1.
-    file_lines + 1.
-    file_lines.
-    file_lines * 2.
-    size*2 + 1.
-    maxint.
+    Lines in File - 1.
+    Lines in File + 1.
+    Lines in File.
+    Lines in File * 2.  
+
+File: 
+    Empty.
+    Not Empty.
+       
 
 Content:
-    alphanumeric characters.  [if !zerovalue and !error]
-    special characters.       [if !zerovalue]
-    spaces.                   [if !zerovalue]
+    Alphanumeric Characters.  
+    Special Characters.       [if !Zerovalue]
+    All Spaces.               [if !Zerovalue]
+    Binary File.              
