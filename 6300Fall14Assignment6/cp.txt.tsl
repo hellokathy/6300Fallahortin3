@@ -3,322 +3,338 @@ Test Case 1  		<error>
    Filename :  not provided
 
 
-Test Case 2  		<single>
-   Filename :  provided with quotes
+Test Case 2  		<error>
+   File :  Non-existent file
 
 
 Test Case 3  		<single>
-   Filename :  provided with no quotes
+   Number of lines (numlines) :  0
 
 
-Test Case 4  		<error>
-   Filename :  Non-existent file
+Test Case 4  		<single>
+   Number of lines (numlines) :  = Lines in File
 
 
-Test Case 5  		(Key = 2.1.1.1.)
-   Filename :  provided
-   numlines :  0
-   File     :  Empty
-   Content  :  Alphanumeric Characters
+Test Case 5  		<single>  (follows [if])
+   Content :  All Spaces
 
 
-Test Case 6  		(Key = 2.1.1.4.)
-   Filename :  provided
-   numlines :  0
-   File     :  Empty
-   Content  :  Binary File
+Test Case 6  		(Key = 2.1.1.2.0.)
+   Filename                   :  provided
+   Filename Contents          :  provided with quotes
+   File                       :  Empty
+   Number of lines (numlines) :  1
+   Content                    :  <n/a>
 
 
-Test Case 7  		(Key = 2.1.2.1.)
-   Filename :  provided
-   numlines :  0
-   File     :  Not Empty
-   Content  :  Alphanumeric Characters
+Test Case 7  		(Key = 2.1.2.2.1.)
+   Filename                   :  provided
+   Filename Contents          :  provided with quotes
+   File                       :  Not Empty
+   Number of lines (numlines) :  1
+   Content                    :  Alphanumeric Characters
 
 
-Test Case 8  		(Key = 2.1.2.4.)
-   Filename :  provided
-   numlines :  0
-   File     :  Not Empty
-   Content  :  Binary File
+Test Case 8  		(Key = 2.1.2.2.2.)
+   Filename                   :  provided
+   Filename Contents          :  provided with quotes
+   File                       :  Not Empty
+   Number of lines (numlines) :  1
+   Content                    :  Special Characters
 
 
-Test Case 9  		(Key = 2.2.1.1.)
-   Filename :  provided
-   numlines :  1
-   File     :  Empty
-   Content  :  Alphanumeric Characters
+Test Case 9  		(Key = 2.1.2.2.4.)
+   Filename                   :  provided
+   Filename Contents          :  provided with quotes
+   File                       :  Not Empty
+   Number of lines (numlines) :  1
+   Content                    :  Binary File
 
 
-Test Case 10 		(Key = 2.2.1.2.)
-   Filename :  provided
-   numlines :  1
-   File     :  Empty
-   Content  :  Special Characters
+Test Case 10 		(Key = 2.1.2.3.1.)
+   Filename                   :  provided
+   Filename Contents          :  provided with quotes
+   File                       :  Not Empty
+   Number of lines (numlines) :  < Lines in File
+   Content                    :  Alphanumeric Characters
 
 
-Test Case 11 		(Key = 2.2.1.3.)
-   Filename :  provided
-   numlines :  1
-   File     :  Empty
-   Content  :  All Spaces
+Test Case 11 		(Key = 2.1.2.3.2.)
+   Filename                   :  provided
+   Filename Contents          :  provided with quotes
+   File                       :  Not Empty
+   Number of lines (numlines) :  < Lines in File
+   Content                    :  Special Characters
 
 
-Test Case 12 		(Key = 2.2.1.4.)
-   Filename :  provided
-   numlines :  1
-   File     :  Empty
-   Content  :  Binary File
+Test Case 12 		(Key = 2.1.2.3.4.)
+   Filename                   :  provided
+   Filename Contents          :  provided with quotes
+   File                       :  Not Empty
+   Number of lines (numlines) :  < Lines in File
+   Content                    :  Binary File
 
 
-Test Case 13 		(Key = 2.2.2.1.)
-   Filename :  provided
-   numlines :  1
-   File     :  Not Empty
-   Content  :  Alphanumeric Characters
+Test Case 13 		(Key = 2.1.2.4.1.)
+   Filename                   :  provided
+   Filename Contents          :  provided with quotes
+   File                       :  Not Empty
+   Number of lines (numlines) :  > Lines in File
+   Content                    :  Alphanumeric Characters
 
 
-Test Case 14 		(Key = 2.2.2.2.)
-   Filename :  provided
-   numlines :  1
-   File     :  Not Empty
-   Content  :  Special Characters
+Test Case 14 		(Key = 2.1.2.4.2.)
+   Filename                   :  provided
+   Filename Contents          :  provided with quotes
+   File                       :  Not Empty
+   Number of lines (numlines) :  > Lines in File
+   Content                    :  Special Characters
 
 
-Test Case 15 		(Key = 2.2.2.3.)
-   Filename :  provided
-   numlines :  1
-   File     :  Not Empty
-   Content  :  All Spaces
+Test Case 15 		(Key = 2.1.2.4.4.)
+   Filename                   :  provided
+   Filename Contents          :  provided with quotes
+   File                       :  Not Empty
+   Number of lines (numlines) :  > Lines in File
+   Content                    :  Binary File
 
 
-Test Case 16 		(Key = 2.2.2.4.)
-   Filename :  provided
-   numlines :  1
-   File     :  Not Empty
-   Content  :  Binary File
+Test Case 16 		(Key = 2.2.1.2.0.)
+   Filename                   :  provided
+   Filename Contents          :  provided with no quotes
+   File                       :  Empty
+   Number of lines (numlines) :  1
+   Content                    :  <n/a>
 
 
-Test Case 17 		(Key = 2.3.1.1.)
-   Filename :  provided
-   numlines :  Lines in File - 1
-   File     :  Empty
-   Content  :  Alphanumeric Characters
-
-
-Test Case 18 		(Key = 2.3.1.2.)
-   Filename :  provided
-   numlines :  Lines in File - 1
-   File     :  Empty
-   Content  :  Special Characters
-
-
-Test Case 19 		(Key = 2.3.1.3.)
-   Filename :  provided
-   numlines :  Lines in File - 1
-   File     :  Empty
-   Content  :  All Spaces
-
-
-Test Case 20 		(Key = 2.3.1.4.)
-   Filename :  provided
-   numlines :  Lines in File - 1
-   File     :  Empty
-   Content  :  Binary File
-
-
-Test Case 21 		(Key = 2.3.2.1.)
-   Filename :  provided
-   numlines :  Lines in File - 1
-   File     :  Not Empty
-   Content  :  Alphanumeric Characters
-
-
-Test Case 22 		(Key = 2.3.2.2.)
-   Filename :  provided
-   numlines :  Lines in File - 1
-   File     :  Not Empty
-   Content  :  Special Characters
-
-
-Test Case 23 		(Key = 2.3.2.3.)
-   Filename :  provided
-   numlines :  Lines in File - 1
-   File     :  Not Empty
-   Content  :  All Spaces
-
-
-Test Case 24 		(Key = 2.3.2.4.)
-   Filename :  provided
-   numlines :  Lines in File - 1
-   File     :  Not Empty
-   Content  :  Binary File
-
-
-Test Case 25 		(Key = 2.4.1.1.)
-   Filename :  provided
-   numlines :  Lines in File + 1
-   File     :  Empty
-   Content  :  Alphanumeric Characters
-
-
-Test Case 26 		(Key = 2.4.1.2.)
-   Filename :  provided
-   numlines :  Lines in File + 1
-   File     :  Empty
-   Content  :  Special Characters
-
-
-Test Case 27 		(Key = 2.4.1.3.)
-   Filename :  provided
-   numlines :  Lines in File + 1
-   File     :  Empty
-   Content  :  All Spaces
-
-
-Test Case 28 		(Key = 2.4.1.4.)
-   Filename :  provided
-   numlines :  Lines in File + 1
-   File     :  Empty
-   Content  :  Binary File
-
-
-Test Case 29 		(Key = 2.4.2.1.)
-   Filename :  provided
-   numlines :  Lines in File + 1
-   File     :  Not Empty
-   Content  :  Alphanumeric Characters
-
-
-Test Case 30 		(Key = 2.4.2.2.)
-   Filename :  provided
-   numlines :  Lines in File + 1
-   File     :  Not Empty
-   Content  :  Special Characters
-
-
-Test Case 31 		(Key = 2.4.2.3.)
-   Filename :  provided
-   numlines :  Lines in File + 1
-   File     :  Not Empty
-   Content  :  All Spaces
-
-
-Test Case 32 		(Key = 2.4.2.4.)
-   Filename :  provided
-   numlines :  Lines in File + 1
-   File     :  Not Empty
-   Content  :  Binary File
-
-
-Test Case 33 		(Key = 2.5.1.1.)
-   Filename :  provided
-   numlines :  Lines in File
-   File     :  Empty
-   Content  :  Alphanumeric Characters
-
-
-Test Case 34 		(Key = 2.5.1.2.)
-   Filename :  provided
-   numlines :  Lines in File
-   File     :  Empty
-   Content  :  Special Characters
-
-
-Test Case 35 		(Key = 2.5.1.3.)
-   Filename :  provided
-   numlines :  Lines in File
-   File     :  Empty
-   Content  :  All Spaces
-
-
-Test Case 36 		(Key = 2.5.1.4.)
-   Filename :  provided
-   numlines :  Lines in File
-   File     :  Empty
-   Content  :  Binary File
-
-
-Test Case 37 		(Key = 2.5.2.1.)
-   Filename :  provided
-   numlines :  Lines in File
-   File     :  Not Empty
-   Content  :  Alphanumeric Characters
-
-
-Test Case 38 		(Key = 2.5.2.2.)
-   Filename :  provided
-   numlines :  Lines in File
-   File     :  Not Empty
-   Content  :  Special Characters
-
-
-Test Case 39 		(Key = 2.5.2.3.)
-   Filename :  provided
-   numlines :  Lines in File
-   File     :  Not Empty
-   Content  :  All Spaces
-
-
-Test Case 40 		(Key = 2.5.2.4.)
-   Filename :  provided
-   numlines :  Lines in File
-   File     :  Not Empty
-   Content  :  Binary File
-
-
-Test Case 41 		(Key = 2.6.1.1.)
-   Filename :  provided
-   numlines :  Lines in File * 2
-   File     :  Empty
-   Content  :  Alphanumeric Characters
-
-
-Test Case 42 		(Key = 2.6.1.2.)
-   Filename :  provided
-   numlines :  Lines in File * 2
-   File     :  Empty
-   Content  :  Special Characters
-
-
-Test Case 43 		(Key = 2.6.1.3.)
-   Filename :  provided
-   numlines :  Lines in File * 2
-   File     :  Empty
-   Content  :  All Spaces
-
-
-Test Case 44 		(Key = 2.6.1.4.)
-   Filename :  provided
-   numlines :  Lines in File * 2
-   File     :  Empty
-   Content  :  Binary File
-
-
-Test Case 45 		(Key = 2.6.2.1.)
-   Filename :  provided
-   numlines :  Lines in File * 2
-   File     :  Not Empty
-   Content  :  Alphanumeric Characters
-
-
-Test Case 46 		(Key = 2.6.2.2.)
-   Filename :  provided
-   numlines :  Lines in File * 2
-   File     :  Not Empty
-   Content  :  Special Characters
-
-
-Test Case 47 		(Key = 2.6.2.3.)
-   Filename :  provided
-   numlines :  Lines in File * 2
-   File     :  Not Empty
-   Content  :  All Spaces
-
-
-Test Case 48 		(Key = 2.6.2.4.)
-   Filename :  provided
-   numlines :  Lines in File * 2
-   File     :  Not Empty
-   Content  :  Binary File
+Test Case 17 		(Key = 2.2.2.2.1.)
+   Filename                   :  provided
+   Filename Contents          :  provided with no quotes
+   File                       :  Not Empty
+   Number of lines (numlines) :  1
+   Content                    :  Alphanumeric Characters
+
+
+Test Case 18 		(Key = 2.2.2.2.2.)
+   Filename                   :  provided
+   Filename Contents          :  provided with no quotes
+   File                       :  Not Empty
+   Number of lines (numlines) :  1
+   Content                    :  Special Characters
+
+
+Test Case 19 		(Key = 2.2.2.2.4.)
+   Filename                   :  provided
+   Filename Contents          :  provided with no quotes
+   File                       :  Not Empty
+   Number of lines (numlines) :  1
+   Content                    :  Binary File
+
+
+Test Case 20 		(Key = 2.2.2.3.1.)
+   Filename                   :  provided
+   Filename Contents          :  provided with no quotes
+   File                       :  Not Empty
+   Number of lines (numlines) :  < Lines in File
+   Content                    :  Alphanumeric Characters
+
+
+Test Case 21 		(Key = 2.2.2.3.2.)
+   Filename                   :  provided
+   Filename Contents          :  provided with no quotes
+   File                       :  Not Empty
+   Number of lines (numlines) :  < Lines in File
+   Content                    :  Special Characters
+
+
+Test Case 22 		(Key = 2.2.2.3.4.)
+   Filename                   :  provided
+   Filename Contents          :  provided with no quotes
+   File                       :  Not Empty
+   Number of lines (numlines) :  < Lines in File
+   Content                    :  Binary File
+
+
+Test Case 23 		(Key = 2.2.2.4.1.)
+   Filename                   :  provided
+   Filename Contents          :  provided with no quotes
+   File                       :  Not Empty
+   Number of lines (numlines) :  > Lines in File
+   Content                    :  Alphanumeric Characters
+
+
+Test Case 24 		(Key = 2.2.2.4.2.)
+   Filename                   :  provided
+   Filename Contents          :  provided with no quotes
+   File                       :  Not Empty
+   Number of lines (numlines) :  > Lines in File
+   Content                    :  Special Characters
+
+
+Test Case 25 		(Key = 2.2.2.4.4.)
+   Filename                   :  provided
+   Filename Contents          :  provided with no quotes
+   File                       :  Not Empty
+   Number of lines (numlines) :  > Lines in File
+   Content                    :  Binary File
+
+
+Test Case 26 		(Key = 2.3.1.2.0.)
+   Filename                   :  provided
+   Filename Contents          :  contains special chars
+   File                       :  Empty
+   Number of lines (numlines) :  1
+   Content                    :  <n/a>
+
+
+Test Case 27 		(Key = 2.3.2.2.1.)
+   Filename                   :  provided
+   Filename Contents          :  contains special chars
+   File                       :  Not Empty
+   Number of lines (numlines) :  1
+   Content                    :  Alphanumeric Characters
+
+
+Test Case 28 		(Key = 2.3.2.2.2.)
+   Filename                   :  provided
+   Filename Contents          :  contains special chars
+   File                       :  Not Empty
+   Number of lines (numlines) :  1
+   Content                    :  Special Characters
+
+
+Test Case 29 		(Key = 2.3.2.2.4.)
+   Filename                   :  provided
+   Filename Contents          :  contains special chars
+   File                       :  Not Empty
+   Number of lines (numlines) :  1
+   Content                    :  Binary File
+
+
+Test Case 30 		(Key = 2.3.2.3.1.)
+   Filename                   :  provided
+   Filename Contents          :  contains special chars
+   File                       :  Not Empty
+   Number of lines (numlines) :  < Lines in File
+   Content                    :  Alphanumeric Characters
+
+
+Test Case 31 		(Key = 2.3.2.3.2.)
+   Filename                   :  provided
+   Filename Contents          :  contains special chars
+   File                       :  Not Empty
+   Number of lines (numlines) :  < Lines in File
+   Content                    :  Special Characters
+
+
+Test Case 32 		(Key = 2.3.2.3.4.)
+   Filename                   :  provided
+   Filename Contents          :  contains special chars
+   File                       :  Not Empty
+   Number of lines (numlines) :  < Lines in File
+   Content                    :  Binary File
+
+
+Test Case 33 		(Key = 2.3.2.4.1.)
+   Filename                   :  provided
+   Filename Contents          :  contains special chars
+   File                       :  Not Empty
+   Number of lines (numlines) :  > Lines in File
+   Content                    :  Alphanumeric Characters
+
+
+Test Case 34 		(Key = 2.3.2.4.2.)
+   Filename                   :  provided
+   Filename Contents          :  contains special chars
+   File                       :  Not Empty
+   Number of lines (numlines) :  > Lines in File
+   Content                    :  Special Characters
+
+
+Test Case 35 		(Key = 2.3.2.4.4.)
+   Filename                   :  provided
+   Filename Contents          :  contains special chars
+   File                       :  Not Empty
+   Number of lines (numlines) :  > Lines in File
+   Content                    :  Binary File
+
+
+Test Case 36 		(Key = 2.4.1.2.0.)
+   Filename                   :  provided
+   Filename Contents          :  provided is a directory
+   File                       :  Empty
+   Number of lines (numlines) :  1
+   Content                    :  <n/a>
+
+
+Test Case 37 		(Key = 2.4.2.2.1.)
+   Filename                   :  provided
+   Filename Contents          :  provided is a directory
+   File                       :  Not Empty
+   Number of lines (numlines) :  1
+   Content                    :  Alphanumeric Characters
+
+
+Test Case 38 		(Key = 2.4.2.2.2.)
+   Filename                   :  provided
+   Filename Contents          :  provided is a directory
+   File                       :  Not Empty
+   Number of lines (numlines) :  1
+   Content                    :  Special Characters
+
+
+Test Case 39 		(Key = 2.4.2.2.4.)
+   Filename                   :  provided
+   Filename Contents          :  provided is a directory
+   File                       :  Not Empty
+   Number of lines (numlines) :  1
+   Content                    :  Binary File
+
+
+Test Case 40 		(Key = 2.4.2.3.1.)
+   Filename                   :  provided
+   Filename Contents          :  provided is a directory
+   File                       :  Not Empty
+   Number of lines (numlines) :  < Lines in File
+   Content                    :  Alphanumeric Characters
+
+
+Test Case 41 		(Key = 2.4.2.3.2.)
+   Filename                   :  provided
+   Filename Contents          :  provided is a directory
+   File                       :  Not Empty
+   Number of lines (numlines) :  < Lines in File
+   Content                    :  Special Characters
+
+
+Test Case 42 		(Key = 2.4.2.3.4.)
+   Filename                   :  provided
+   Filename Contents          :  provided is a directory
+   File                       :  Not Empty
+   Number of lines (numlines) :  < Lines in File
+   Content                    :  Binary File
+
+
+Test Case 43 		(Key = 2.4.2.4.1.)
+   Filename                   :  provided
+   Filename Contents          :  provided is a directory
+   File                       :  Not Empty
+   Number of lines (numlines) :  > Lines in File
+   Content                    :  Alphanumeric Characters
+
+
+Test Case 44 		(Key = 2.4.2.4.2.)
+   Filename                   :  provided
+   Filename Contents          :  provided is a directory
+   File                       :  Not Empty
+   Number of lines (numlines) :  > Lines in File
+   Content                    :  Special Characters
+
+
+Test Case 45 		(Key = 2.4.2.4.4.)
+   Filename                   :  provided
+   Filename Contents          :  provided is a directory
+   File                       :  Not Empty
+   Number of lines (numlines) :  > Lines in File
+   Content                    :  Binary File
 

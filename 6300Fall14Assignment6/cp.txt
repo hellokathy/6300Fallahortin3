@@ -10,30 +10,35 @@
 #   n is either the number specified using the optional argument
 #   numlines or 10, if no such argument is provided.
 
+#This is whether or not the filename is provided
 Filename:
     not provided.               [error]
     provided.                   [property Filename_provided]
-    provided with quotes.       [single] [if Filename_provided]
-    provided with no quotes.    [single] [if Filename_provided]
+
+#This is the actual structure of the filename argument passed into program
+Filename Contents:
+    provided with quotes.       [if Filename_provided]
+    provided with no quotes.    [if Filename_provided]
     contains special chars.     [if Filename_provided]
     provided is a directory.    [if Filename_provided]
-    Non-existent file.          [error]
+    
 
-numlines:
-    0.              [property Zerovalue]
-    1.
-    Lines in File - 1.
-    Lines in File + 1.
-    Lines in File.
-    Lines in File * 2.  
-
+#This is whether the file is empty or non empty or non-existent
 File: 
-    Empty.
-    Not Empty.
-       
+    Empty.                      [property Empty]
+    Not Empty.                  
+    Non-existent file.          [error]   
+
+Number of lines (numlines):
+    0.                          [single][property Zerovalue]
+    1.
+    < Lines in File.            [if !Empty]
+    > Lines in File.            [if !Empty]
+    = Lines in File.            [single]  
+    Non Numerical Input         [error]
 
 Content:
-    Alphanumeric Characters.  
-    Special Characters.       [if !Zerovalue]
-    All Spaces.               [if !Zerovalue]
-    Binary File.              
+    Alphanumeric Characters.    [if !Zerovalue && !Empty]
+    Special Characters.         [if !Zerovalue && !Empty]
+    All Spaces.                 [if !Zerovalue && !Empty][single]
+    Binary File.                [if !Zerovalue && !Empty]
