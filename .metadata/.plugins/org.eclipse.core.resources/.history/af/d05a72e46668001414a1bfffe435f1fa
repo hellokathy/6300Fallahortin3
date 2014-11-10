@@ -1,0 +1,19 @@
+package edu.gatech.seclass.assignment7;
+
+public class MyClass {
+	public void buggyMethod1(int x, int y){
+		if (x>y){
+			x/0;
+		} else {
+			
+		}
+		
+		//System.out.println("");
+	};
+
+	public void buggyMethod2(int x, int y){
+
+	};
+
+}
+

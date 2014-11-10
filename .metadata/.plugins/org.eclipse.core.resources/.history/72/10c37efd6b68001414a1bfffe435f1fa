@@ -1,0 +1,20 @@
+package edu.gatech.seclass.assignment7;
+
+public class MyClass {
+	public void buggyMethod1(int x, boolean cond1){
+		if (condition1||x==0){ //since this is or statement full branch coverage would need to be seen to identify the error
+			System.out.println(1337/x);
+		} else {
+			System.out.println(1337*x);
+		}
+		
+		//System.out.println("");
+	};
+
+	public void buggyMethod2(int x, boolean cond1){
+		System.out.println("Not possibile since 100% branch coverage would imply 100% statement coverage and error would be found");
+
+	};
+
+}
+

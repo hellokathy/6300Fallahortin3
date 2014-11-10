@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MyClassTestSC1" project="6300Fall14Assignment7" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="edu.gatech.seclass.assignment7.MyClassTestSC1" time="0.003">
+    <testcase name="test" classname="edu.gatech.seclass.assignment7.MyClassTestSC1" time="0.002"/>
+    <testcase name="test2" classname="edu.gatech.seclass.assignment7.MyClassTestSC1" time="0.001"/>
+  </testsuite>
+</testrun>
