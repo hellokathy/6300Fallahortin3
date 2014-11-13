@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GradesDBTest" project="GradesCalculator" tests="8" started="8" failures="0" errors="0" ignored="0">
+  <testsuite name="edu.gatech.seclass.gradescalc.GradesDBTest" time="0.89">
+    <testcase name="testGetNumAssignments" classname="edu.gatech.seclass.gradescalc.GradesDBTest" time="0.636"/>
+    <testcase name="testGetNumStudents" classname="edu.gatech.seclass.gradescalc.GradesDBTest" time="0.049"/>
+    <testcase name="testGetStudents1" classname="edu.gatech.seclass.gradescalc.GradesDBTest" time="0.039"/>
+    <testcase name="testGetStudents2" classname="edu.gatech.seclass.gradescalc.GradesDBTest" time="0.043"/>
+    <testcase name="testGetNumProjects" classname="edu.gatech.seclass.gradescalc.GradesDBTest" time="0.032"/>
+    <testcase name="testGetStudentsByName1" classname="edu.gatech.seclass.gradescalc.GradesDBTest" time="0.037"/>
+    <testcase name="testGetStudentsByName2" classname="edu.gatech.seclass.gradescalc.GradesDBTest" time="0.03"/>
+    <testcase name="testGetStudentsByID" classname="edu.gatech.seclass.gradescalc.GradesDBTest" time="0.024"/>
+  </testsuite>
+</testrun>

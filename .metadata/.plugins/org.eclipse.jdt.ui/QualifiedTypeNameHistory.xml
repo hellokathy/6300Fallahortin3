@@ -5,4 +5,5 @@
 <fullyQualifiedTypeName name="android.content.Intent"/>
 <fullyQualifiedTypeName name="android.widget.RadioButton"/>
 <fullyQualifiedTypeName name="edu.gatech.seclass.unitconvertor.R.id"/>
+<fullyQualifiedTypeName name="edu.gatech.seclass.assignment7.MyClass"/>
 </qualifiedTypeNameHistroy>

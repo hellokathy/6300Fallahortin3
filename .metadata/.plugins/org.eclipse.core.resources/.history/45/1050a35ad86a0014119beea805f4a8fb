@@ -1,0 +1,43 @@
+package edu.gatech.seclass.gradescalc;
+
+import java.util.HashSet;
+
+public class GradesDB {
+	
+	static String db;
+	
+	public GradesDB(String dbName){
+		this.db = dbName;
+	}
+
+	public int getNumStudents() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public int getNumAssignments() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public int getNumProjects() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public HashSet<Student> getStudents() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Student getStudentByName(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Student getStudentByID(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

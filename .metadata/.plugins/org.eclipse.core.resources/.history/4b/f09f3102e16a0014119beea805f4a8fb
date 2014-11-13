@@ -1,0 +1,84 @@
+package edu.gatech.seclass.gradescalc;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.HashSet;
+
+import org.apache.poi.hslf.model.Sheet;
+import org.apache.poi.hssf.extractor.ExcelExtractor;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.poifs.filesystem.POIFSFileSystem;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class GradesDB {
+	HashSet<Student> students = new HashSet<Student>();
+	XSSFSheet sheetTeamGrades;
+	XSSFSheet sheetSoloGrades;
+	XSSFSheet sheetAttendance;
+
+	public GradesDB(String dbName) throws IOException{
+		InputStream inp = new FileInputStream(dbName);
+		XSSFWorkbook wb = new XSSFWorkbook(inp);
+
+		this.sheetSoloGrades = wb.getSheet("IndividualGrades"); //Student Assignments
+		this.sheetTeamGrades = wb.getSheet("TeamGrades");
+		this.sheetAttendance = wb.getSheet("Attendance");
+				
+		//loading student info
+		XSSFSheet sheetInfo = wb.getSheet("StudentsInfo"); //Student Info
+		for (int rowNum = 0; rowNum < sheetInfo.getLastRowNum(); rowNum++){
+			Row rInfo = sheetInfo.getRow(rowNum);
+			Row rAttendance = sheetAttendance.getRow(rowNum);
+			Student s = new Student(
+					rInfo.getCell(0).getStringCellValue(), //name
+					(int) rInfo.getCell(1).getNumericCellValue(), //gtID
+					(int) rAttendance.getCell(1).getNumericCellValue()//attendance
+					);
+			this.students.add(s);
+		}
+		
+	}
+
+	public int getNumStudents() {
+		return this.students.size();
+	}
+
+	public int getNumAssignments() {
+		Row header = this.sheetSoloGrades.getRow(0);
+		return header.getLastCellNum()-1; //subtracts name
+	}
+
+	public int getNumProjects() {
+		Row header = this.sheetSoloGrades.getRow(0);
+		return header.getLastCellNum()-1; //subtracts name
+	}
+
+	public HashSet<Student> getStudents() {
+		return this.students;
+	}
+
+	public Student getStudentByName(String string) {
+		for (Student s : students) {
+			if (s.getName().compareTo(string) == 0) {
+				return s;
+			}
+		}
+		return null;
+	}
+
+	public Student getStudentByID(String string) {
+		for (Student s : students) {
+			if (s.getGtid().compareTo(string) == 0) {
+				return s;
+			}
+		}
+		return null;
+	}
+
+}

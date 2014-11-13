@@ -1,0 +1,63 @@
+package edu.gatech.seclass.gradescalc;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.HashSet;
+
+import org.apache.poi.hslf.model.Sheet;
+import org.apache.poi.hssf.extractor.ExcelExtractor;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.poifs.filesystem.POIFSFileSystem;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class GradesDB {
+	
+	static String dbName;
+	
+	public GradesDB(String dbName) throws IOException{
+		this.dbName = dbName;
+		InputStream inp = new FileInputStream(this.dbName);
+	    XSSFWorkbook wb = new XSSFWorkbook(inp);
+	    XSSFSheet sheet = wb.getSheetAt(0);
+
+	    for (int rowNum = 1, rowNum < 15; rowNum++){
+	    	
+	    }
+	}
+
+	public int getNumStudents() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public int getNumAssignments() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public int getNumProjects() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public HashSet<Student> getStudents() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Student getStudentByName(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Student getStudentByID(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

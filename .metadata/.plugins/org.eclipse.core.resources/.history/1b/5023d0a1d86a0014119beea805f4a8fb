@@ -1,0 +1,28 @@
+package edu.gatech.seclass.gradescalc;
+
+public class Student {
+	String name;
+	String gtID;
+	//String email;
+	int attendance;
+	public Student(String name, int gtID){
+		this.name = name;
+		this.gtID = gtID;
+	};
+	
+	public String getName() {
+		// TODO Auto-generated method stub
+		return this.name;
+	}
+
+	public String getGtid() {
+		// TODO Auto-generated method stub
+		return this.gtID;
+	}
+
+	public Object getAttendance() {
+		// TODO Auto-generated method stub
+		return this.attendance;
+	}
+
+}

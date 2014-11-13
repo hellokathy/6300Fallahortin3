@@ -1,0 +1,11 @@
+package edu.gatech.seclass.gradescalc;
+
+public class GradesDB {
+	
+	static String db;
+	
+	public GradesDB(String dbName){
+		this.db = dbName;
+	}
+	
+}
