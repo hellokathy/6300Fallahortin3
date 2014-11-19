@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GradesDBTest" project="GradesCalculator" tests="13" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="edu.gatech.seclass.gradescalc.GradesDBTest" incomplete="true">
+    <testcase name="testGetNumAssignments" classname="edu.gatech.seclass.gradescalc.GradesDBTest" time="10.68"/>
+    <testcase name="testGetAverageProjectsGrade" classname="edu.gatech.seclass.gradescalc.GradesDBTest" incomplete="true"/>
+    <testcase name="testAddIndividualContributions" classname="edu.gatech.seclass.gradescalc.GradesDBTest" incomplete="true"/>
+    <testcase name="testAddAssignment" classname="edu.gatech.seclass.gradescalc.GradesDBTest" incomplete="true"/>
+    <testcase name="testGetNumStudents" classname="edu.gatech.seclass.gradescalc.GradesDBTest" incomplete="true"/>
+    <testcase name="testGetStudents1" classname="edu.gatech.seclass.gradescalc.GradesDBTest" incomplete="true"/>
+    <testcase name="testGetStudents2" classname="edu.gatech.seclass.gradescalc.GradesDBTest" incomplete="true"/>
+    <testcase name="testGetNumProjects" classname="edu.gatech.seclass.gradescalc.GradesDBTest" incomplete="true"/>
+    <testcase name="testAddGradesForAssignment" classname="edu.gatech.seclass.gradescalc.GradesDBTest" incomplete="true"/>
+    <testcase name="testGetStudentsByName1" classname="edu.gatech.seclass.gradescalc.GradesDBTest" incomplete="true"/>
+    <testcase name="testGetStudentsByName2" classname="edu.gatech.seclass.gradescalc.GradesDBTest" incomplete="true"/>
+    <testcase name="testGetAverageAssignmentsGrade" classname="edu.gatech.seclass.gradescalc.GradesDBTest" incomplete="true"/>
+    <testcase name="testGetStudentsByID" classname="edu.gatech.seclass.gradescalc.GradesDBTest" incomplete="true"/>
+  </testsuite>
+</testrun>
