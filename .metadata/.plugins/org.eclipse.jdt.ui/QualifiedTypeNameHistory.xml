@@ -6,4 +6,7 @@
 <fullyQualifiedTypeName name="android.widget.RadioButton"/>
 <fullyQualifiedTypeName name="edu.gatech.seclass.unitconvertor.R.id"/>
 <fullyQualifiedTypeName name="edu.gatech.seclass.assignment7.MyClass"/>
+<fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Cell"/>
+<fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.CreationHelper"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 </qualifiedTypeNameHistroy>
