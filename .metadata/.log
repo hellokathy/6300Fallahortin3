@@ -5371,3 +5371,30 @@ Binding(CTRL+O,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.mylyn.wikitext.ui.editor.markupSourceContext,,,system)
+
+!ENTRY org.eclipse.ui 4 4 2014-11-25 21:58:32.112
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.print: {ActionHandler(org.eclipse.ui.texteditor.AbstractDecoratedTextEditor$12@6a42238c)} vs {ActionHandler(org.eclipse.ui.texteditor.TextOperationAction@4e947769)}
+
+!ENTRY org.eclipse.ui 4 4 2014-11-25 21:58:51.919
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.print: {ActionHandler(org.eclipse.ui.texteditor.AbstractDecoratedTextEditor$12@6a42238c)} vs {ActionHandler(org.eclipse.ui.texteditor.TextOperationAction@4e947769)}
+
+!ENTRY org.eclipse.ui 4 4 2014-11-25 22:00:48.155
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.print: {ActionHandler(org.eclipse.ui.texteditor.TextOperationAction@3b8b01c6)} vs {ActionHandler(org.eclipse.ui.texteditor.AbstractDecoratedTextEditor$12@457ef1dc)}
+
+!ENTRY org.eclipse.ui 4 4 2014-11-25 22:00:53.468
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.print: {ActionHandler(org.eclipse.ui.texteditor.TextOperationAction@1940bacd)} vs {ActionHandler(org.eclipse.ui.texteditor.AbstractDecoratedTextEditor$12@72426ced)}
+
+!ENTRY org.eclipse.ui 4 4 2014-11-25 22:00:54.084
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.print: {ActionHandler(org.eclipse.ui.texteditor.TextOperationAction@3b8b01c6)} vs {ActionHandler(org.eclipse.ui.texteditor.AbstractDecoratedTextEditor$12@457ef1dc)}
+
+!ENTRY org.eclipse.ui 4 4 2014-11-25 22:00:56.051
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.print: {ActionHandler(org.eclipse.ui.texteditor.AbstractDecoratedTextEditor$12@6a42238c)} vs {ActionHandler(org.eclipse.ui.texteditor.TextOperationAction@4e947769)}
+
+!ENTRY org.eclipse.ui 4 4 2014-11-25 22:01:34.771
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.print: {ActionHandler(org.eclipse.ui.texteditor.TextOperationAction@3b8b01c6)} vs {ActionHandler(org.eclipse.ui.texteditor.AbstractDecoratedTextEditor$12@457ef1dc)}
+
+!ENTRY org.eclipse.ui 4 4 2014-11-25 22:37:55.110
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.print: {ActionHandler(org.eclipse.ui.texteditor.TextOperationAction@6f8bbba6)} vs {ActionHandler(org.eclipse.ui.texteditor.AbstractDecoratedTextEditor$12@276f963d)}
+
+!ENTRY org.eclipse.ui 4 4 2014-11-25 23:05:09.559
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.print: {ActionHandler(org.eclipse.ui.texteditor.AbstractDecoratedTextEditor$12@6a42238c)} vs {ActionHandler(org.eclipse.ui.texteditor.TextOperationAction@4e947769)}

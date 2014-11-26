@@ -12,6 +12,11 @@ public class Student {
 		this.attendance = s.attendance;
 	};
 	
+	public Student(String name, String id, int attendance) {
+		this.name = name;
+		this.gtID = Integer.parseInt(id);
+		this.attendance = Integer.valueOf(attendance);
+	}
 	public Student(String name, int id, int attendance) {
 		this.name = name;
 		this.gtID = id;
