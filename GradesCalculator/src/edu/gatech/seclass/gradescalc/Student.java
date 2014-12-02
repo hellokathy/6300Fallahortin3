@@ -2,37 +2,44 @@ package edu.gatech.seclass.gradescalc;
 
 public class Student {
 	String name;
-	int gtID;
+	String gtID;
+	GradesDB record = null;
+	String attendance;
 	//String email;
-	int attendance;
+	
 	public Student(String name, String id, GradesDB db){ //added the new method for deliverable 2
 		this.name = name;
-		Student s = db.getStudentByID(id);
-		//this.gtID = Integer.getInteger(s.getGtid());
-		this.attendance = s.attendance;
+		this.gtID = id;
+		this.record = db;
 	};
 	
-	public Student(String name, String id, int attendance) {
-		this.name = name;
-		this.gtID = Integer.parseInt(id);
-		this.attendance = Integer.valueOf(attendance);
-	}
-	public Student(String name, int id, int attendance) {
-		this.name = name;
-		this.gtID = id;
-		this.attendance = Integer.valueOf(attendance);
-	}
-
 	public String getName() {
 		return this.name;
 	}
 
 	public String getGtid() {
-		return String.valueOf(this.gtID);
+		return this.gtID;
+	}
+	
+	public int getAttendance() {
+		return record.getStudentAttendance(this);
+	}
+	
+	public String getEmail() {
+		// TODO Auto-generated method stub
+		return record.getStudentEmail(this);
+	}
+	public double getAverageAssignmentsGrade() {
+		return record.getAverageProjectsGrade(this);
 	}
 
-	public Object getAttendance() {
-		return this.attendance;
+	public String getOverallGrade() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public double getAverageProjectsGrade() {
+		return record.getAverageProjectsGrade(this);
 	}
 
 }

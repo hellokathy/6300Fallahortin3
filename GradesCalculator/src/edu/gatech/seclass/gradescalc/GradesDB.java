@@ -21,6 +21,7 @@ public class GradesDB {
 	XSSFSheet sheetAttendance;
 	XSSFSheet sheetProjects;
 	XSSFSheet sheetContribs;
+	XSSFSheet sheetInfo;
 	InputStream inp = null;
 	XSSFWorkbook wb = null;
 	FileOutputStream fileOut;
@@ -28,10 +29,17 @@ public class GradesDB {
 	XSSFSheet sheetTeams;
 
 
-	public GradesDB(String dbName)  {
-		this.dbName = dbName;
+	public GradesDB(String dbName)  { //left for compatibility 
+		this.loadSpreadsheet(dbName);
+	}
+
+	public GradesDB() {
+		// TODO Auto-generated constructor stub
+	}
+	public void loadSpreadsheet(String gradesDb) {
+		this.dbName = gradesDb;
 		try {
-			inp = new FileInputStream(dbName);
+			inp = new FileInputStream(gradesDb);
 			wb = new XSSFWorkbook(inp);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -44,7 +52,7 @@ public class GradesDB {
 		this.sheetTeamGrades = wb.getSheet("TeamGrades");
 		this.sheetAttendance = wb.getSheet("Attendance");
 		this.sheetTeams = wb.getSheet("Teams");
-
+		this.sheetInfo = wb.getSheet("StudentsInfo"); //Student Info
 
 		//loading student info
 		XSSFSheet sheetInfo = wb.getSheet("StudentsInfo"); //Student Info
@@ -53,14 +61,15 @@ public class GradesDB {
 			Row rAttendance = sheetAttendance.getRow(rowNum);
 			Student s = new Student(
 					rInfo.getCell(0).getStringCellValue(), //name
-					(int) rInfo.getCell(1).getNumericCellValue(), //gtID
-					(int) rAttendance.getCell(1).getNumericCellValue()//attendance
+					String.valueOf((int) rInfo.getCell(1).getNumericCellValue()), //gtID
+					this
 					);
 			this.students.add(s);
 		}
 
 	}
-
+	
+	
 	public int getNumStudents() {
 		return this.students.size();
 	}
@@ -139,7 +148,7 @@ public class GradesDB {
 
 	}
 
-	private Row seekRowByString(XSSFSheet sheet,String name){
+	public Row seekRowByString(XSSFSheet sheet,String name){
 		for (int rowNum = 1; rowNum < sheet.getLastRowNum()+1; rowNum++){
 			Row row = sheet.getRow(rowNum);
 			if (row.getCell(0).getStringCellValue().compareTo(name)==0){ //checking to see if the row equals the name
@@ -190,7 +199,15 @@ public class GradesDB {
 			this.addGradeForAssignment(projectName, name, grade, this.sheetContribs);
 		}	
 	}
-
+	public String getStudentEmail(Student student) {
+		Row row = this.seekRowByString(this.sheetInfo, student.getName());
+		return row.getCell(2).getStringCellValue(); //email;
+	}
+	public int getStudentAttendance(Student student) {
+		Row row = this.seekRowByString(this.sheetAttendance, student.getName());
+		return (int)row.getCell(1).getNumericCellValue(); //attednace
+	}
+	
 	public void addStudent(Student student1) {
 		// TODO Auto-generated method stub
 		
@@ -202,6 +219,16 @@ public class GradesDB {
 	}
 
 	public void addGradesForProject(String teamName, String projectName, int grade) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public String getFormula() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void setFormula(String text) {
 		// TODO Auto-generated method stub
 		
 	}

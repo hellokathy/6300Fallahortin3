@@ -16,7 +16,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class GradesDBTest {
+public class GradesDBTestExtras {
 
 	GradesDB db = null;
 	static final String GRADES_DB_GOLDEN = "DB" + File.separator
@@ -168,12 +168,12 @@ public class GradesDBTest {
 
 	@Test
 	public void testAddStudent(){
-		Student student = new Student("Alex Hortin", "1337", 0);
+		Student student = new Student("Alex Hortin", "1337",db);
 		db.addStudent(student);
 		student = null;
 		student = db.getStudentByName("Alex Hortin");
 		assertEquals("1337", student.getGtid());
-		Student student1 = new Student("Bob Loblaw", "7331", 0);
+		Student student1 = new Student("Bob Loblaw", "7331",db);
 		db.addStudent(student1);
 		student1 = null;
 		student1 = db.getStudentByName("Bob Loblaw");
