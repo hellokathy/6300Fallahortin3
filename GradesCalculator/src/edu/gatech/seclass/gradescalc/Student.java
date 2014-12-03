@@ -29,17 +29,48 @@ public class Student {
 		// TODO Auto-generated method stub
 		return record.getStudentEmail(this);
 	}
-	public double getAverageAssignmentsGrade() {
-		return record.getAverageProjectsGrade(this);
+	public int getAverageAssignmentsGrade() {
+		return (int)(record.getAverageAssignmentsGrade(this)+.5);
 	}
 
-	public String getOverallGrade() {
+	public int getOverallGrade() {
 		// TODO Auto-generated method stub
-		return null;
+		return record.getOverallGrade(this);
 	}
 
-	public double getAverageProjectsGrade() {
-		return record.getAverageProjectsGrade(this);
+	public int getAverageProjectsGrade() {
+		return (int) (record.getAverageProjectsGrade(this)+.5);
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((gtID == null) ? 0 : gtID.hashCode());
+		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Student other = (Student) obj;
+		if (gtID == null) {
+			if (other.gtID != null)
+				return false;
+		} else if (!gtID.equals(other.gtID))
+			return false;
+		if (name == null) {
+			if (other.name != null)
+				return false;
+		} else if (!name.equals(other.name))
+			return false;
+		return true;
 	}
 
 }
