@@ -5,9 +5,15 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
+
+import javax.script.Bindings;
+import javax.script.ScriptContext;
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -21,17 +27,28 @@ public class GradesDB {
 	XSSFSheet sheetAttendance;
 	XSSFSheet sheetProjects;
 	XSSFSheet sheetContribs;
+	XSSFSheet sheetInfo;
 	InputStream inp = null;
 	XSSFWorkbook wb = null;
 	FileOutputStream fileOut;
 	String dbName;
 	XSSFSheet sheetTeams;
+	String formula;
 
 
-	public GradesDB(String dbName)  {
-		this.dbName = dbName;
+//	public GradesDB(String dbName)  { //left for compatibility 
+//		this.loadSpreadsheet(dbName);
+//		this.formula = "AT * 0.2 + AS * .4 + PR * .4";
+//	}
+
+	public GradesDB() {
+		// TODO Auto-generated constructor stub
+		this.formula = "AT * 0.2 + AS * .4 + PR * .4";
+	}
+	public void loadSpreadsheet(String gradesDb) {
+		this.dbName = gradesDb;
 		try {
-			inp = new FileInputStream(dbName);
+			inp = new FileInputStream(gradesDb);
 			wb = new XSSFWorkbook(inp);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -44,7 +61,7 @@ public class GradesDB {
 		this.sheetTeamGrades = wb.getSheet("TeamGrades");
 		this.sheetAttendance = wb.getSheet("Attendance");
 		this.sheetTeams = wb.getSheet("Teams");
-
+		this.sheetInfo = wb.getSheet("StudentsInfo"); //Student Info
 
 		//loading student info
 		XSSFSheet sheetInfo = wb.getSheet("StudentsInfo"); //Student Info
@@ -53,13 +70,14 @@ public class GradesDB {
 			Row rAttendance = sheetAttendance.getRow(rowNum);
 			Student s = new Student(
 					rInfo.getCell(0).getStringCellValue(), //name
-					(int) rInfo.getCell(1).getNumericCellValue(), //gtID
-					(int) rAttendance.getCell(1).getNumericCellValue()//attendance
+					String.valueOf((int) rInfo.getCell(1).getNumericCellValue()), //gtID
+					this
 					);
 			this.students.add(s);
 		}
 
 	}
+
 
 	public int getNumStudents() {
 		return this.students.size();
@@ -139,7 +157,7 @@ public class GradesDB {
 
 	}
 
-	private Row seekRowByString(XSSFSheet sheet,String name){
+	public Row seekRowByString(XSSFSheet sheet,String name){
 		for (int rowNum = 1; rowNum < sheet.getLastRowNum()+1; rowNum++){
 			Row row = sheet.getRow(rowNum);
 			if (row.getCell(0).getStringCellValue().compareTo(name)==0){ //checking to see if the row equals the name
@@ -176,11 +194,18 @@ public class GradesDB {
 		Row row = this.seekRowByString(this.sheetContribs, student.getName());
 		String teamName = this.seekTeam(student.getName()); //seeks the team the student is one
 		Row rowTeam = this.seekRowByString(this.sheetTeamGrades, teamName);
-		int totalGrade = 0;
+		double totalGrade = 0;
+		int totalProjects = 0;
 		for (int colNum = 1; colNum <= this.getNumProjects();colNum++){
-			totalGrade += (row.getCell(colNum).getNumericCellValue() * rowTeam.getCell(colNum).getNumericCellValue());
+			try {
+				totalGrade += (((row.getCell(colNum).getNumericCellValue() * rowTeam.getCell(colNum).getNumericCellValue())/100));
+				totalProjects++;
+			} catch(NullPointerException e) {
+				System.out.println("Caught NullPointerException: " + e);
+				totalProjects--;
+			}
 		}
-		return totalGrade/this.getNumProjects()/100;
+		return (totalGrade/totalProjects);
 	}
 
 	public void addIndividualContributions(String projectName, HashMap<Student, Integer> contributions) {
@@ -190,19 +215,50 @@ public class GradesDB {
 			this.addGradeForAssignment(projectName, name, grade, this.sheetContribs);
 		}	
 	}
+	public String getStudentEmail(Student student) {
+		Row row = this.seekRowByString(this.sheetInfo, student.getName());
+		return row.getCell(2).getStringCellValue(); //email;
+	}
+	public int getStudentAttendance(Student student) {
+		Row row = this.seekRowByString(this.sheetAttendance, student.getName());
+		return (int)(row.getCell(1).getNumericCellValue()+.5); //attednace
+	}
 
 	public void addStudent(Student student1) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void addProject(String string) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void addGradesForProject(String teamName, String projectName, int grade) {
 		// TODO Auto-generated method stub
+
+	}
+
+	public void setFormula(String formula) {
+		this.formula = formula;
+	}
+	public String getFormula() {
+		return this.formula;
+	}
+	public int getOverallGrade(Student s) throws GradeFormulaException {
+		try {
+			ScriptEngine engine = new ScriptEngineManager().getEngineByExtension("js");  
+			Bindings bindings = engine.createBindings();  
+			bindings.put("AT", s.getAttendance());//attendance
+			bindings.put("AS", s.getAverageAssignmentsGrade());//assignments 
+			bindings.put("PR", s.getAverageProjectsGrade());//projects
+			engine.setBindings(bindings, ScriptContext.ENGINE_SCOPE);  
+			Object result = engine.eval(this.formula);  // dangerous!
+			double val = new BigDecimal(result.toString()).doubleValue();
+			return (int)(val+.5);
+		} catch (Exception e){
+			throw new GradeFormulaException("misformed formula!");
+		}
 		
 	}
 }
