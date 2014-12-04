@@ -16,7 +16,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class GradesDBTest {
+public class GradesDBTestExtras {
 
 	GradesDB db = null;
 	static final String GRADES_DB_GOLDEN = "DB" + File.separator
@@ -168,16 +168,16 @@ public class GradesDBTest {
 
 	@Test
 	public void testAddStudent(){
-		Student student1 = new Student("Alex Hortin", "1337", db);
-		db.addStudent(student1);
-		Student student = null;
+		Student student = new Student("Alex Hortin", "1337",db);
+		db.addStudent(student);
+		student = null;
 		student = db.getStudentByName("Alex Hortin");
 		assertEquals("1337", student.getGtid());
-		Student student1 = new Student("Bob Loblaw", "7331", db);
+		Student student1 = new Student("Bob Loblaw", "7331",db);
 		db.addStudent(student1);
-		Student student = null;
-		student = db.getStudentByName("Bob Loblaw");
-		assertEquals("7331", student.getGtid());
+		student1 = null;
+		student1 = db.getStudentByName("Bob Loblaw");
+		assertEquals("7331", student1.getGtid());
 	}
 
 	@Test
@@ -185,25 +185,23 @@ public class GradesDBTest {
 		db.addProject("PROJECT: Manhattan");
 		db = new GradesDB(GRADES_DB);
 		assertEquals(4, db.getNumProjects());
-		db.addProject("PROJECT: white-box testing");
-		db = new GradesDB(GRADES_DB);
-		assertEquals(5, db.getNumProjects());
 	}
 
 	@Test
 	public void testAddProjectGrade(){
-		String projectName = "PROJECT: Batman";
-		Student student1 = new Student("Rastus Kight", "1337", db);
-		Student student2 = new Student("Bob Loblaw", "7331", db);
-		db.addProject(projectName);
+		String projectName = "PROJECT: Manhattan";
+		Student student1 = new Student("Caileigh Raybould", "901234506", db); // contrib 50	90	89 (96)/ team3 90 86	102 (100) 
+		Student student2 = new Student("Kym Hiles", "901234507", db); // contrib 93	99	92 (100) / team1 93	95	100 (25)
+		HashMap<Student, Integer> contributions1 = new HashMap<Student, Integer>();
+		contributions1.put(student1, 96);
+		contributions1.put(student2, 100);
+		db.addIndividualContributions(projectName, contributions1);
+		
+		db.addGradesForProject("Team 3", "Project: Manhattan", 100);
+		db.addGradesForProject("Team 1", "Project: Manhattan", 25);
 		db = new GradesDB(GRADES_DB);
-		HashMap<Student, Integer> grades = new HashMap<Student, Integer>();
-		grades.put(student1, 87);
-		grades.put(student2, 94);
-		db.addGradesForProject(projectName, grades);
-		db = new GradesDB(GRADES_DB);
-		assertEquals(90, db.getAverageProjectGrade(student1), 1);
-		assertEquals(94, db.getAverageAssignmentsGrade(student2), 1);
+		assertEquals(77, db.getAverageAssignmentsGrade(student1), 1); //((50*90) + (90*86) + (102*89)+(96*100))/100/4
+		assertEquals(74, db.getAverageAssignmentsGrade(student2), 1); //((93*93) + (99*95) + (92*100) + (100*25))/100/4
 	}
 
 
