@@ -36,14 +36,14 @@ public class GradesDB {
 	String formula;
 
 
-	public GradesDB(String dbName)  { //left for compatibility 
-		this.loadSpreadsheet(dbName);
-		this.formula = "AT * 0.2 + AS * .04 + PR * .4";
-	}
+//	public GradesDB(String dbName)  { //left for compatibility 
+//		this.loadSpreadsheet(dbName);
+//		this.formula = "AT * 0.2 + AS * .4 + PR * .4";
+//	}
 
 	public GradesDB() {
 		// TODO Auto-generated constructor stub
-		this.formula = "AT * 0.2 + AS * .04 + PR * .4";
+		this.formula = "AT * 0.2 + AS * .4 + PR * .4";
 	}
 	public void loadSpreadsheet(String gradesDb) {
 		this.dbName = gradesDb;
@@ -194,15 +194,18 @@ public class GradesDB {
 		Row row = this.seekRowByString(this.sheetContribs, student.getName());
 		String teamName = this.seekTeam(student.getName()); //seeks the team the student is one
 		Row rowTeam = this.seekRowByString(this.sheetTeamGrades, teamName);
-		int totalGrade = 0;
+		double totalGrade = 0;
+		int totalProjects = 0;
 		for (int colNum = 1; colNum <= this.getNumProjects();colNum++){
 			try {
-				totalGrade += (row.getCell(colNum).getNumericCellValue() * rowTeam.getCell(colNum).getNumericCellValue());
+				totalGrade += (((row.getCell(colNum).getNumericCellValue() * rowTeam.getCell(colNum).getNumericCellValue())/100));
+				totalProjects++;
 			} catch(NullPointerException e) {
-				System.err.println("Caught NullPointerException: " + e);
+				System.out.println("Caught NullPointerException: " + e);
+				totalProjects--;
 			}
 		}
-		return totalGrade/this.getNumProjects()/100;
+		return (totalGrade/totalProjects);
 	}
 
 	public void addIndividualContributions(String projectName, HashMap<Student, Integer> contributions) {
@@ -251,8 +254,8 @@ public class GradesDB {
 			bindings.put("PR", s.getAverageProjectsGrade());//projects
 			engine.setBindings(bindings, ScriptContext.ENGINE_SCOPE);  
 			Object result = engine.eval(this.formula);  // dangerous!
-			int val = new BigDecimal(result.toString()).intValue();
-			return val;
+			double val = new BigDecimal(result.toString()).doubleValue();
+			return (int)(val+.5);
 		} catch (Exception e){
 			throw new GradeFormulaException("misformed formula!");
 		}

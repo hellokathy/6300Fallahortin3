@@ -33,7 +33,7 @@ public class GradesCalcGUI {
         String defaultdb = "DB" + File.separator + "GradesDatabase6300.xlsx";
         GradesCalcGUI window = null;
         if (args.length < 1) {
-            new GradesCalcGUI(defaultdb);
+            window = new GradesCalcGUI(defaultdb);
             System.out.println("Using default spreadsheet: " + defaultdb);
         } else {
             window = new GradesCalcGUI(args[0]);
