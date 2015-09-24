@@ -3,7 +3,7 @@
   <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;GradesCalcGUI.java&quot; tooltip=&quot;GradesCalculator/src/edu/gatech/seclass/gradescalc/GradesCalcGUI.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GradesCalculator/src/edu/gatech/seclass/gradescalc/GradesCalcGUI.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;GradesCalcTestSuite.java&quot; tooltip=&quot;GradesCalculator/test/edu/gatech/seclass/gradescalc/GradesCalcTestSuite.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GradesCalculator/test/edu/gatech/seclass/gradescalc/GradesCalcTestSuite.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;GradesDBTestExtras.java&quot; tooltip=&quot;GradesCalculator/test/edu/gatech/seclass/gradescalc/GradesDBTestExtras.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GradesCalculator/test/edu/gatech/seclass/gradescalc/GradesDBTestExtras.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Student.java&quot; tooltip=&quot;GradesCalculator/src/edu/gatech/seclass/gradescalc/Student.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GradesCalculator/src/edu/gatech/seclass/gradescalc/Student.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;GradesDB.java&quot; tooltip=&quot;GradesCalculator/src/edu/gatech/seclass/gradescalc/GradesDB.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GradesCalculator/src/edu/gatech/seclass/gradescalc/GradesDB.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;GradesCalcGUITest.java&quot; tooltip=&quot;GradesCalculator/test/edu/gatech/seclass/gradescalc/GradesCalcGUITest.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GradesCalculator/test/edu/gatech/seclass/gradescalc/GradesCalcGUITest.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;GradesDBTest.java&quot; tooltip=&quot;GradesCalculator/test/edu/gatech/seclass/gradescalc/GradesDBTest.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GradesCalculator/test/edu/gatech/seclass/gradescalc/GradesDBTest.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;GradeFormulaException.java&quot; tooltip=&quot;GradesCalculator/src/edu/gatech/seclass/gradescalc/GradeFormulaException.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/GradesCalculator/src/edu/gatech/seclass/gradescalc/GradeFormulaException.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_j9b6snnAEeSigMoQZgjwqw" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_kQlgMHnAEeSigMoQZgjwqw" label="%trimmedwindow.label.eclipseSDK" x="104" y="104" width="1024" height="768">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_j9b6snnAEeSigMoQZgjwqw" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_kQlgMHnAEeSigMoQZgjwqw" label="%trimmedwindow.label.eclipseSDK" x="-928" y="-403" width="1024" height="768">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workingSets/>"/>
@@ -69,24 +69,25 @@
           <tags>persp.actionSet:org.eclipse.debug.ui.breakpointActionSet</tags>
           <tags>persp.newWizSC:org.eclipse.m2e.core.wizards.Maven2ProjectWizard</tags>
           <tags>persp.actionSet:org.eclipse.wst.ws.explorer.explorer</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_kaylEXnAEeSigMoQZgjwqw" selectedElement="_kaylF3nAEeSigMoQZgjwqw" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_kaylEXnAEeSigMoQZgjwqw" selectedElement="_kaylEnnAEeSigMoQZgjwqw" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_kaylEnnAEeSigMoQZgjwqw" elementId="topLeft" containerData="2500" selectedElement="_kaylE3nAEeSigMoQZgjwqw">
               <tags>newtablook</tags>
+              <tags>active</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_kaylE3nAEeSigMoQZgjwqw" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_kZ4mIHnAEeSigMoQZgjwqw"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_kaylFHnAEeSigMoQZgjwqw" elementId="org.eclipse.ui.views.ResourceNavigator" toBeRendered="false" ref="_kZ50QHnAEeSigMoQZgjwqw"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_kaylFXnAEeSigMoQZgjwqw" elementId="org.eclipse.jdt.ui.TypeHierarchy" toBeRendered="false" ref="_kZ50QXnAEeSigMoQZgjwqw"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_kaylFnnAEeSigMoQZgjwqw" elementId="org.eclipse.jdt.ui.PackagesView" toBeRendered="false" ref="_katFgHnAEeSigMoQZgjwqw"/>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_kaylF3nAEeSigMoQZgjwqw" containerData="7500" selectedElement="_kaylHXnAEeSigMoQZgjwqw">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_kaylGHnAEeSigMoQZgjwqw" containerData="5612" selectedElement="_kaylGXnAEeSigMoQZgjwqw" horizontal="true">
-                <children xsi:type="advanced:Placeholder" xmi:id="_kaylGXnAEeSigMoQZgjwqw" elementId="org.eclipse.ui.editorss" containerData="7000" ref="_kZougHnAEeSigMoQZgjwqw"/>
-                <children xsi:type="basic:PartStack" xmi:id="_kaylGnnAEeSigMoQZgjwqw" elementId="topRight" containerData="3000" selectedElement="_kaylG3nAEeSigMoQZgjwqw">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_kaylF3nAEeSigMoQZgjwqw" containerData="7500" selectedElement="_kaylGHnAEeSigMoQZgjwqw">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_kaylGHnAEeSigMoQZgjwqw" containerData="9000" selectedElement="_kaylGXnAEeSigMoQZgjwqw" horizontal="true">
+                <children xsi:type="advanced:Placeholder" xmi:id="_kaylGXnAEeSigMoQZgjwqw" elementId="org.eclipse.ui.editorss" containerData="9000" ref="_kZougHnAEeSigMoQZgjwqw"/>
+                <children xsi:type="basic:PartStack" xmi:id="_kaylGnnAEeSigMoQZgjwqw" elementId="topRight" containerData="1000" selectedElement="_kaylG3nAEeSigMoQZgjwqw">
                   <tags>newtablook</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_kaylG3nAEeSigMoQZgjwqw" elementId="org.eclipse.ui.views.ContentOutline" ref="_kavhxXnAEeSigMoQZgjwqw"/>
                   <children xsi:type="advanced:Placeholder" xmi:id="_kaylHHnAEeSigMoQZgjwqw" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" ref="_kawI0HnAEeSigMoQZgjwqw"/>
                 </children>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_kaylHXnAEeSigMoQZgjwqw" elementId="bottomRight" containerData="4388" selectedElement="_kaylJXnAEeSigMoQZgjwqw">
+              <children xsi:type="basic:PartStack" xmi:id="_kaylHXnAEeSigMoQZgjwqw" elementId="bottomRight" containerData="1000" selectedElement="_kaylJXnAEeSigMoQZgjwqw">
                 <tags>newtablook</tags>
                 <tags>org.eclipse.e4.secondaryDataStack</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_kaylHnnAEeSigMoQZgjwqw" elementId="org.eclipse.ui.views.AllMarkersView" ref="_katFgXnAEeSigMoQZgjwqw"/>
@@ -243,7 +244,6 @@
         <tags>newtablook</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_yXoTYHnAEeSigMoQZgjwqw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="GradesDB.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;GradesDB.java&quot; partName=&quot;GradesDB.java&quot; title=&quot;GradesDB.java&quot; tooltip=&quot;GradesCalculator/src/edu/gatech/seclass/gradescalc/GradesDB.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/GradesCalculator/src/edu/gatech/seclass/gradescalc/GradesDB.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;111&quot; selectionOffset=&quot;5667&quot; selectionTopPixel=&quot;2722&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
@@ -275,12 +275,10 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_SWxCIHnEEeSigMoQZgjwqw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="GradesCalcGUI.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;GradesCalcGUI.java&quot; partName=&quot;GradesCalcGUI.java&quot; title=&quot;GradesCalcGUI.java&quot; tooltip=&quot;GradesCalculator/src/edu/gatech/seclass/gradescalc/GradesCalcGUI.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/GradesCalculator/src/edu/gatech/seclass/gradescalc/GradesCalcGUI.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2525&quot; selectionTopPixel=&quot;731&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;GradesCalcGUI.java&quot; partName=&quot;GradesCalcGUI.java&quot; title=&quot;GradesCalcGUI.java&quot; tooltip=&quot;GradesCalculator/src/edu/gatech/seclass/gradescalc/GradesCalcGUI.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/GradesCalculator/src/edu/gatech/seclass/gradescalc/GradesCalcGUI.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1507&quot; selectionTopPixel=&quot;207&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_zm7B8HnJEeSigMoQZgjwqw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="GradesDBTest.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;GradesDBTest.java&quot; partName=&quot;GradesDBTest.java&quot; title=&quot;GradesDBTest.java&quot; tooltip=&quot;GradesCalculator/test/edu/gatech/seclass/gradescalc/GradesDBTest.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/GradesCalculator/test/edu/gatech/seclass/gradescalc/GradesDBTest.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;80&quot; selectionOffset=&quot;1992&quot; selectionTopPixel=&quot;782&quot;/>&#xD;&#xA;&lt;/editor>"/>
@@ -300,6 +298,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; currentWorkingSetName=&quot;Aggregate for window 1409800924962&quot; org.eclipse.cdt.ui.cview.groupincludes=&quot;false&quot; org.eclipse.cdt.ui.cview.groupmacros=&quot;false&quot; org.eclipse.cdt.ui.editor.CUChildren=&quot;true&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_kdmogHnAEeSigMoQZgjwqw" elementId="org.eclipse.ui.navigator.ProjectExplorer">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -493,7 +493,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_kRk-sHnAEeSigMoQZgjwqw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_oc1RgHtdEeSOKfSvA0ptOA" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_j-JslnnAEeSigMoQZgjwqw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_1DS34LTmEeSpxrkz24g3Og" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_j-JslnnAEeSigMoQZgjwqw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_kRk-sXnAEeSigMoQZgjwqw" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -523,7 +523,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_kRllwHnAEeSigMoQZgjwqw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_oc6KAntdEeSOKfSvA0ptOA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_j-JFY3nAEeSigMoQZgjwqw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_1DY-gLTmEeSpxrkz24g3Og" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_j-JFY3nAEeSigMoQZgjwqw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_kRmM0HnAEeSigMoQZgjwqw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
